@@ -1,6 +1,7 @@
 [build]
-  functions = "out_functions"
-  publish   = "out_publish"
-  command   = "npm run build"
+  command = "next build"
+  publish = ".next"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ../../"
+
 [[plugins]]
 package = "@netlify/plugin-nextjs"
