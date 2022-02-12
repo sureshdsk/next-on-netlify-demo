@@ -2,3 +2,5 @@
   functions = "out_functions"
   publish   = "out_publish"
   command   = "npm run build"
+[[plugins]]
+package = "@netlify/plugin-nextjs"
